@@ -3,7 +3,7 @@
 all: code
 
 code: main.c buddy.c buddy.h utils.h
-	gcc -o code main.c buddy.c -std=c11 -O2
+	gcc -o code main.c buddy.c -std=c11 -O2 -Wno-int-conversion
 
 clean:
 	rm -f code test *.o
